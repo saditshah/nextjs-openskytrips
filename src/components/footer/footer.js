@@ -81,7 +81,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div class={footercss.copyright}>
+                <div className={footercss.copyright}>
         <span>© Copyright 2023 Openskytrips. All Rights Reserved</span>
         <span>Design by MS Software Solutions</span>
       </div>

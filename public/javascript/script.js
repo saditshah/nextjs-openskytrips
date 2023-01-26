@@ -148,7 +148,7 @@ function stopVideo() {
 
 
     }
-    var owlsm = $('.owl-sm');
+    /*var owlsm = $('.owl-sm');
     var owllg = $('.owl-lg');
 
     owlsm.owlCarousel({
@@ -177,4 +177,4 @@ function stopVideo() {
     })
     $('.stop').on('click', function () {
       owl.trigger('stop.owl.autoplay')
-    })
+    })*/
