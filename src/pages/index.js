@@ -22,11 +22,11 @@ export default function Home() {
 
       </Head>
       
-      <div className={styles.slider} id="player">
+      {/* <div className={styles.slider} id="player">
         <iframe id="ytplayer" type="text/html" width="100%" height="100%"
           src="https://www.youtube.com/embed/FuKsVeREwiw?playlist=FuKsVeREwiw&amp;loop=1&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;modestbranding=1"
           frameborder="0" allowfullscreen></iframe>
-      </div>
+      </div> */}
 
       <div className={styles.pdsection}>
         <div className={styles.pdheading}>
