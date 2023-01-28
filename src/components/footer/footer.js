@@ -4,11 +4,11 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 
 export default function Footer() {
-    useEffect(()=>{
+    useEffect(() => {
         Aos.init({
-          duration:1500
+            duration: 1500
         });
-      })
+    })
     return (
         <>
             <div className={footercss.footer}>
@@ -79,21 +79,21 @@ export default function Footer() {
                     </div>
                     <div data-aos="fade-up" className={footercss.footercols4}>
                         <h3>Contact Info</h3>
-                        <p >Ellahibagh <br/>Hazratbal road, Buchpora <br/>Srinagar-190020 </p>
-                        <div className={footercss.spacecode} id="" style={{height:"10px"}}></div>
-                        <p style={{marginBottom:"10px"}}>
-                            <span style={{marginRight:"20px"}}>Phone:</span> +91-9599961054</p>
-                        <p style={{marginBottom:"10px"}}>
-                            <span style={{marginRight:"21px"}}>E-mail:</span>Openskytrips@gmail.com</p>
-                        <p style={{marginBottom:"21px"}}>
-                            <span style={{marginRight:"11px"}}>Website:</span>https://openskytrips.com</p>
+                        <p >Ellahibagh <br />Hazratbal road, Buchpora <br />Srinagar-190020 </p>
+                        <div className={footercss.spacecode} id="" style={{ height: "10px" }}></div>
+                        <p style={{ marginBottom: "10px" }}>
+                            <span style={{ marginRight: "20px" }}>Phone:</span> +91-9599961054</p>
+                        <p style={{ marginBottom: "10px" }}>
+                            <span style={{ marginRight: "21px" }}>E-mail:</span>Openskytrips@gmail.com</p>
+                        <p style={{ marginBottom: "21px" }}>
+                            <span style={{ marginRight: "11px" }}>Website:</span>https://openskytrips.com</p>
                     </div>
                 </div>
 
-                <div data-aos="fade-up" className={footercss.copyright}>
-        <span>© Copyright 2023 Openskytrips. All Rights Reserved</span>
-        <span>Design by MS Software Solutions</span>
-      </div>
+                <div className={footercss.copyright}>
+                    <span>© Copyright 2023 Openskytrips. All Rights Reserved</span>
+                    <span>Design by MS Software Solutions</span>
+                </div>
 
             </div>
         </>

@@ -9,14 +9,14 @@ export default function Header() {
   const headerShadow = useHeaderShadow();
  
   return (
-    <motion.div
-      variants={headerVariants}
-      initial="hidden"
-      whileInView="show"
+    // <motion.div
+    //   variants={headerVariants}
+    //   initial="hidden"
+    //   whileInView="show"
       
-      viewport={{ once: true, amount: 0.25 }}
-      style={{ boxShadow: headerShadow }}
-    >
+    //   viewport={{ once: true, amount: 0.25 }}
+    //   style={{ boxShadow: headerShadow }}
+    // >
       <div className={headercss.header}>
         <div className={headercss.logo}>
           <img className={headercss.logoimg} src="/images/logo.png" />
@@ -35,6 +35,6 @@ export default function Header() {
         </div>
         <div className={headercss.hamburger}><i className="fa fa-bars"></i></div>
       </div>
-     </motion.div>
+    //  </motion.div>
   )
 }

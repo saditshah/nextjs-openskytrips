@@ -28,13 +28,13 @@ export default function Home() {
 
       </Head>
       
-      {/* <div className={styles.slider} id="player">
+      <div className={styles.slider} id="player">
         <iframe id="ytplayer" type="text/html" width="100%" height="100%"
           src="https://www.youtube.com/embed/FuKsVeREwiw?playlist=FuKsVeREwiw&amp;loop=1&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;modestbranding=1"
-          frameborder="0" allowfullscreen></iframe>
-      </div> */}
+          frameBorder={"0"} allowfullscreen={true}></iframe>
+      </div>
 
-      <div className={styles.pdsection}>
+      <div data-aos="fade-up" className={styles.pdsection}>
         <div className={styles.pdheading}>
           <span className={styles.h1}>Take a look at Our</span>
           <span className={styles.h5}>Most Popular Destinations</span>
@@ -66,8 +66,8 @@ export default function Home() {
       </div>
 
       <div className={styles.abtcont}>
-        <img data-aos="slide-right" src="images/palne.jpeg" />
-        <div data-aos="slide-left" className={styles.habt}>
+        <img data-aos="fade-up" src="images/palne.jpeg" />
+        <div data-aos="fade-up" className={styles.habt}>
           <div className={styles.abtitle}>
             <span>About Us</span>
             <h2>Get ready for real time adventure</h2>

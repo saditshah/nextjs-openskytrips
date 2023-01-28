@@ -65,7 +65,7 @@
                 width: 100%;
             }
 
-            @media (max-width:$sm) and (max-width:$md) {
+            @media (min-width:$sm) and (max-width:$md) {
                 width: 50%;
             }
 
