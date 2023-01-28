@@ -1,11 +1,20 @@
 import footercss from './footer.module.scss'
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 export default function Footer() {
+    useEffect(()=>{
+        Aos.init({
+          duration:1500
+        });
+      })
     return (
         <>
             <div className={footercss.footer}>
                 <div className={footercss.footerinfo}>
-                    <span>Open Sky Trips</span>
-                    <div className={footercss.socialicons}>
+                    <span data-aos="fade-up">Open Sky Trips</span>
+                    <div data-aos="fade-up" className={footercss.socialicons}>
                         <a href="https://www.facebook.com/" target="_blank" className="fab fa-facebook fa-1x" title="facebook"></a>
                         <a href="https://twitter.com/" target="_blank" className="fab fa-twitter fa-1x" title="twitter"></a>
                         <a href="https://www.instagram.com/" target="_blank" className="fab fa-instagram fa-1x" title="instagram"></a>
@@ -15,7 +24,7 @@ export default function Footer() {
                 </div>
 
                 <div className={footercss.rowfooter}>
-                    <div className={footercss.footercols4}>
+                    <div data-aos="fade-up" className={footercss.footercols4}>
                         <h3>Our Tours</h3>
                         <div className={footercss.menutourscontainer}>
                             <ul id="menu-tours" className={footercss.footmenu}>
@@ -47,7 +56,7 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className={footercss.footercols4}>
+                    <div data-aos="fade-up" className={footercss.footercols4}>
                         <h3>Quick Links</h3>
                         <div className={footercss.menufootercontainer}>
                             <ul id="menu-footer" className={footercss.footmenu}>
@@ -68,7 +77,7 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className={footercss.footercols4}>
+                    <div data-aos="fade-up" className={footercss.footercols4}>
                         <h3>Contact Info</h3>
                         <p >Ellahibagh <br/>Hazratbal road, Buchpora <br/>Srinagar-190020 </p>
                         <div className={footercss.spacecode} id="" style={{height:"10px"}}></div>
@@ -81,7 +90,7 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className={footercss.copyright}>
+                <div data-aos="fade-up" className={footercss.copyright}>
         <span>© Copyright 2023 Openskytrips. All Rights Reserved</span>
         <span>Design by MS Software Solutions</span>
       </div>

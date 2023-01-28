@@ -4,8 +4,10 @@ import { motion } from 'framer-motion';
 import { headerVariants } from "../../utils/motion";
 import useHeaderShadow from "../../hooks/useHeaderShadow";
 
+
 export default function Header() {
   const headerShadow = useHeaderShadow();
+ 
   return (
     <motion.div
       variants={headerVariants}
@@ -33,6 +35,6 @@ export default function Header() {
         </div>
         <div className={headercss.hamburger}><i className="fa fa-bars"></i></div>
       </div>
-    </motion.div>
+     </motion.div>
   )
 }

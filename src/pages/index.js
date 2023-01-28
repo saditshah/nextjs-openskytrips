@@ -1,13 +1,19 @@
 
 import Head from 'next/head'
 import styles from '@/styles/Home.module.scss'
-import Header from '@/components/header/header'
-import Footer from '@/components/footer/footer'
-import Script from 'next/script'
 import Slider from '@/components/slider/slider'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(()=>{
+    Aos.init({
+      duration:2000
+    });
+  })
+  
+
   return (
     
     <>
@@ -34,21 +40,21 @@ export default function Home() {
           <span className={styles.h5}>Most Popular Destinations</span>
         </div>
         <div className={styles.pdestinations}>
-          <div className={styles.pdcard}>
+          <div data-aos="fade-up" className={styles.pdcard}>
             <img src="images/gulmarg.jpg" alt="" width="100%" height="300px" />
             <div className={styles.desc}>
               <span>Gulmarg</span>
               <input type="button" className={styles.btnknowmore} value="Know More" />
             </div>
           </div>
-          <div className={styles.pdcard}>
+          <div data-aos="fade-up" className={styles.pdcard}>
             <img src="images/pahalgham.jpg" alt="" width="100%" height="300px" />
             <div className={styles.desc}>
               <span>Pahalgam</span>
               <input type="button" className={styles.btnknowmore} value="Know More" />
             </div>
           </div>
-          <div className={styles.pdcard}>
+          <div data-aos="fade-up" className={styles.pdcard}>
             <img src="images/srinagar.jpg" alt="" width="100%" height="290px" />
             <div className={styles.desc}>
               <span>Srinagar</span>
@@ -60,8 +66,8 @@ export default function Home() {
       </div>
 
       <div className={styles.abtcont}>
-        <img src="images/palne.jpeg" />
-        <div className={styles.habt}>
+        <img data-aos="slide-right" src="images/palne.jpeg" />
+        <div data-aos="slide-left" className={styles.habt}>
           <div className={styles.abtitle}>
             <span>About Us</span>
             <h2>Get ready for real time adventure</h2>
