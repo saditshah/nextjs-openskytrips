@@ -5,10 +5,6 @@ import { useState } from 'react';
 
 export default function Header() {
   const [sideMenu, setsideMenu] = useState(false);
-  const handleToggle = () => {
-    setsideMenu(prev => !prev);
-    console.log('Opened' + sideMenu);
-  }
   return (
     
       <div className={headercss.header}>
@@ -27,7 +23,7 @@ export default function Header() {
           </ul>
           <input type="button" className={headercss.btncall} value="Call +91-9906678789" />
         </div>
-        <div className={headercss.hamburger} ><i className="fa fa-bars" onClick={handleToggle}></i></div>
+        <div className={headercss.hamburger} ><i className="fa fa-bars" onClick={(()=>setsideMenu(prev => !prev))}></i></div>
         
       </div>
    
