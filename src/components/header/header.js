@@ -1,10 +1,17 @@
 
 import headercss from './header.module.scss'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 
 export default function Header() {
   const [sideMenu, setsideMenu] = useState(false);
+  useEffect(()=> {
+    // add overflow hidden for body tag
+    if(sideMenu)
+    document.body.style.overflow="hidden";
+    else
+    document.body.style.overflow="auto";
+}, [sideMenu])
   return (
     
       <div className={headercss.header}>
@@ -24,7 +31,7 @@ export default function Header() {
           <input type="button" className={headercss.btncall} value="Call +91-9906678789" />
         </div>
         <div className={headercss.hamburger} ><i className="fa fa-bars" onClick={(()=>setsideMenu(prev => !prev))}></i></div>
-        
+        <div className={`${headercss.overlay} ${sideMenu ? `${headercss.showOverlay}` : ""}`}></div>
       </div>
    
   )
