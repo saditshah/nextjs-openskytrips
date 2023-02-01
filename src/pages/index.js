@@ -31,7 +31,7 @@ export default function Home() {
       <div className={styles.slider} id="player">
         <iframe id="ytplayer" type="text/html" width="100%" height="100%"
           src="https://www.youtube.com/embed/FuKsVeREwiw?playlist=FuKsVeREwiw&amp;loop=1&amp;autoplay=1&amp;mute=1&amp;controls=0&amp;modestbranding=1"
-          frameBorder={"0"} allowfullscreen={true}></iframe>
+          frameBorder="0" allowFullScreen></iframe>
       </div>
 
       <div data-aos="fade-up" className={styles.pdsection}>

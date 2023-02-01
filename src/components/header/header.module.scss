@@ -3,11 +3,18 @@
 .header {
     @media (max-width:$md) {
         position: fixed;
+        top:0;
+        left:0;
         width: 100%;
         padding: 0px 0px 10px 10px;
     }
-
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    padding: 0px 0px 10px 10px;
     background-color: #fff;
+    box-shadow: 0 1px 8px rgb(0 0 0 / 10%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -130,7 +137,7 @@
             display: block;
             padding-top: 15px;
         }
-
+        cursor: pointer;
         padding-right: 20px;
         font-size: 30px;
         display: none;
