@@ -1,6 +1,7 @@
 
 import headercss from './header.module.scss'
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 
 export default function Header() {
@@ -23,7 +24,7 @@ export default function Header() {
         <div className={`${headercss.navbar} ${sideMenu ? `${headercss.showMenu}` : ""}`}>
           <ul>
             <li>Home</li>
-            <li>Tours</li>
+            <Link href="../../pages/packages/packages"><li>Packages</li></Link>
             <li>Gallery</li>
             <li>Contact</li>
             <li>About Us</li>
