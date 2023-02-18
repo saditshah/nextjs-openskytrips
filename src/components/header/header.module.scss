@@ -98,7 +98,9 @@
             display: flex;
             list-style: none;
             padding-right: 10px;
-
+            a{
+                text-decoration: none;
+            }
             li {
                 @media (max-width: $md) {
                     padding: 10px 10px;

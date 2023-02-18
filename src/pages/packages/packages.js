@@ -1,7 +1,8 @@
+import packagescss from './packages.module.scss';
 export default function Packages() {
     return (
       
-        <div>Packages</div>
+        <div className={packagescss.content}>Packages</div>
      
     )
   }
