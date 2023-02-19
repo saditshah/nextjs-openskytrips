@@ -2,29 +2,41 @@ import packagecardcss from './packagecard.module.scss';
 export default function Packagecard() {
     return (
         <div className={`${packagecardcss.card} col33`}>
-                    <div className={packagecardcss.imgcss}>
-                        <img src="https://zippgotravelsindia.com/wp-content/uploads/2022/08/12.1-1.jpg"/>
-                    </div>
-                <div className={packagecardcss.duration}>
-                        <ul>
-                            <li>
-                                <span>
-                                    <i aria-hidden="true" class="fas fa-calendar-alt"></i>
-                                </span>
-                                <span>5N6D</span>
-                            </li>
-                            <li>
-                                <span>
-                                    <i aria-hidden="true" class="fas fa-users"></i>
-                                </span>
-                                <span>Family</span>
-                            </li>
-                        </ul>
-                    </div>
+            <div className={packagecardcss.imgcss}>
+                <img src="https://zippgotravelsindia.com/wp-content/uploads/2022/08/12.1-1.jpg" />
+            </div>
+            <div className={packagecardcss.duration}>
+                <ul>
+                    <li>
+                        <span>
+                            <i aria-hidden="true" class="fas fa-calendar-alt"></i>
+                        </span>
+                        <span>5N6D</span>
+                    </li>
+                    <li>
+                        <span>
+                            <i aria-hidden="true" class="fas fa-users"></i>
+                        </span>
+                        <span>Family</span>
+                    </li>
+                </ul>
+            </div>
+            <div className={packagecardcss.carddescription}>
+                <h3><a href="/jewelsofkashmir5n6d">Crystals Of Kashmir</a></h3>
+            </div>
+
+            <div className={packagecardcss.location}>
+                    <ul>
+                        <li>
+                            <span>
+                                <i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
+                            <span>Srinagar - Gulmarg - Pahalgam</span>
+                        </li>
+                    </ul>
+            </div>
 
 
-
-            {/* <div>
+            {/*<div>
                 
                 <div>
                     <div>
@@ -90,6 +102,6 @@ export default function Packagecard() {
                 </div>
             </div> */}
         </div>
-   
+
     )
 }
