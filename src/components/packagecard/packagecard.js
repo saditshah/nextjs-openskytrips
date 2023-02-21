@@ -26,16 +26,26 @@ export default function Packagecard() {
             </div>
 
             <div className={packagecardcss.location}>
-                    <ul>
-                        <li>
-                            <span>
-                                <i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
-                            <span>Srinagar - Gulmarg - Pahalgam</span>
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        <span>
+                            <i aria-hidden="true" class="fas fa-map-marker-alt"></i>						</span>
+                        <span>Srinagar - Gulmarg - Pahalgam</span>
+                    </li>
+                </ul>
+            </div>
+            <div className={packagecardcss.divider}>
+                <span className={packagecardcss.par}>
+                </span>
             </div>
 
-
+            <div>
+                <div>
+                    <div><p>From</p>
+                        <div><h6>₹17,400</h6></div>
+                    </div>
+                </div>
+            </div>
             {/*<div>
                 
                 <div>

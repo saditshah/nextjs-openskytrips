@@ -102,4 +102,14 @@
         }
 
     }
+    .divider{
+        border-style: solid;
+        color: #e6e6e6;
+        width: 100%;
+        border-top: 1px;
+        
+        span{
+            padding:  0px 30px 0px 30px;
+        }          
+    }
 }
