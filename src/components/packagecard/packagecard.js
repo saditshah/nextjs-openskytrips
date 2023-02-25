@@ -1,7 +1,7 @@
 import packagecardcss from './packagecard.module.scss';
 export default function Packagecard() {
     return (
-        <div className={`${packagecardcss.card} col33`}>
+        <div className={packagecardcss.card}>
             <div className={packagecardcss.imgcss}>
                 <img src="https://zippgotravelsindia.com/wp-content/uploads/2022/08/12.1-1.jpg" />
             </div>
@@ -35,17 +35,30 @@ export default function Packagecard() {
                 </ul>
             </div>
             <div className={packagecardcss.divider}>
-                <span className={packagecardcss.par}>
-                </span>
+                <hr></hr>
             </div>
 
-            <div>
-                <div>
-                    <div><p>From</p>
-                        <div><h6>₹17,400</h6></div>
+            
+                <div className={packagecardcss.cardbottom}>
+                     <div className={packagecardcss.from}>
+                        <p>From</p>
+                        <h6>Rs. 17,400</h6>
                     </div>
+
+                    <div className={packagecardcss.explore}>
+                        <a href="/crystalsofkashmir5n6d">
+                           
+                                 <span>EXPLORE</span>
+                                <span>
+                                    <i aria-hidden="true" class="fas fa-arrow-right"></i>
+                                </span>
+                                
+                  
+                        </a>
+                    </div>
+                    
                 </div>
-            </div>
+            
             {/*<div>
                 
                 <div>
