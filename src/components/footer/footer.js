@@ -15,11 +15,11 @@ export default function Footer() {
                 <div className={footercss.footerinfo}>
                     <span data-aos="fade-up">Open Sky Trips</span>
                     <div data-aos="fade-up" className={footercss.socialicons}>
-                        <a href="https://www.facebook.com/" target="_blank" className="fab fa-facebook fa-1x" title="facebook"></a>
-                        <a href="https://twitter.com/" target="_blank" className="fab fa-twitter fa-1x" title="twitter"></a>
-                        <a href="https://www.instagram.com/" target="_blank" className="fab fa-instagram fa-1x" title="instagram"></a>
-                        <a href="https://www.youtube.com/" target="_blank" className="fab fa-youtube fa-1x" title="youtube"></a>
-                        <a href="https://www.linkedin.com/" target="_blank" className="fab fa-linkedin fa-1x" title="linkedin"></a>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" className="fab fa-facebook fa-1x" title="facebook"></a>
+                        <a href="https://twitter.com/" target="_blank" rel="noreferrer" className="fab fa-twitter fa-1x" title="twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" className="fab fa-instagram fa-1x" title="instagram"></a>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" className="fab fa-youtube fa-1x" title="youtube"></a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="fab fa-linkedin fa-1x" title="linkedin"></a>
                     </div>
                 </div>
 
