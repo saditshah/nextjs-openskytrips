@@ -2,7 +2,7 @@
 import headercss from './header.module.scss'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-
+import Image from 'next/image';
 
 export default function Header() {
   const [sideMenu, setsideMenu] = useState(false);
@@ -18,7 +18,8 @@ export default function Header() {
     
       <div className={headercss.header}>
         <div className={headercss.logo}>
-          <img className={headercss.logoimg} src="/images/logo.png" />
+          <Image className={headercss.logoimg} src="/images/logo.png"></Image>
+          {/* <img className={headercss.logoimg} src="/images/logo.png" /> */}
 
         </div>
         <div className={`${headercss.navbar} ${sideMenu ? `${headercss.showMenu}` : ""}`}>
