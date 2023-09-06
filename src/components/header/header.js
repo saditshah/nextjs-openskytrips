@@ -18,8 +18,8 @@ export default function Header() {
     
       <div className={headercss.header}>
         <div className={headercss.logo}>
-          <Image className={headercss.logoimg} src="/images/logo.png" alt='headerimg'></Image>
-          {/* <img className={headercss.logoimg} src="/images/logo.png" /> */}
+          {/* <Image className={headercss.logoimg} src="/images/logo.png" alt='headerimg'></Image> */}
+          <img className={headercss.logoimg} src="/images/logo.png" loading="lazy"/>
 
         </div>
         <div className={`${headercss.navbar} ${sideMenu ? `${headercss.showMenu}` : ""}`}>
