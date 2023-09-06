@@ -18,7 +18,7 @@ export default function Header() {
     
       <div className={headercss.header}>
         <div className={headercss.logo}>
-          <Image className={headercss.logoimg} src="/images/logo.png"></Image>
+          <Image className={headercss.logoimg} src="/images/logo.png" alt='headerimg'></Image>
           {/* <img className={headercss.logoimg} src="/images/logo.png" /> */}
 
         </div>
